@@ -258,4 +258,86 @@ target="_blank">
 WhatsApp
 </body>
 </html>l
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Enterprises</title>
+    <!-- 🔤 Clean & Professional Google Font Link -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Lexend:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Lexend', sans-serif; background-color: #0b0b0b; color: #ffffff; margin: 0; padding: 20px; line-height: 1.6; text-align: center;">
+
+    <!-- 🧭 Clean Navigation Links -->
+    <div style="display: flex; justify-content: center; gap: 25px; margin-top: 20px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">
+        <a href="#about" onclick="showSection('home')" style="color: #a0a0a0; text-decoration: none; font-weight: 500;">About</a>
+        <a href="#products" onclick="showSection('products')" style="color: #e5b842; text-decoration: none; font-weight: 700; border-bottom: 2px solid #e5b842; padding-bottom: 4px;">Products</a>
+        <a href="#contact" style="color: #a0a0a0; text-decoration: none; font-weight: 500;">Contact</a>
+    </div>
+
+    <!-- 🏢 Prominent Corporate Logo Header -->
+    <div style="margin-top: 50px; margin-bottom: 40px; padding: 0 10px;">
+        <!-- Replace logo.png with your exact logo filename if it is different -->
+        <img src="logo.png" alt="Eagle Enterprises Logo" style="width: 110px; height: auto; filter: drop-shadow(0px 4px 10px rgba(229, 184, 66, 0.3)); margin-bottom: 15px;">
+        <h1 style="font-size: 32px; font-weight: 800; color: #e5b842; margin: 0; letter-spacing: -0.5px;">EAGLE ENTERPRISES</h1>
+    </div>
+
+    <!-- 🏡 Home Screen Wrapper -->
+    <div id="homeSection" style="display: block; max-width: 500px; margin: 0 auto;">
+        <!-- 📢 Main Hero Message -->
+        <h2 style="font-size: 42px; font-weight: 800; line-height: 1.2; margin-bottom: 20px; background: linear-gradient(180deg, #ffffff 0%, #b5b5b5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Safety Starts<br>With You
+        </h2>
+        
+        <p style="color: #a0a0a0; font-size: 16px; font-weight: 300; max-width: 400px; margin: 0 auto 35px auto;">
+            Your trusted partner for Industrial Safety, PPE, Road Safety, Fire Safety, and Construction Safety Solutions.
+        </p>
+
+        <!-- 📞 Action Buttons -->
+        <a href="tel:+91YOURNUMBER" style="display: inline-block; background-color: #e5b842; color: #0b0b0b; text-decoration: none; padding: 14px 40px; font-size: 16px; font-weight: 700; border-radius: 30px; box-shadow: 0 6px 20px rgba(229,184,66,0.25); margin-bottom: 80px;">
+            Call Now
+        </a>
+    </div>
+
+    <!-- 📦 Hidden Products Catalogue (Only shows when clicked via JavaScript) -->
+    <div id="productsSection" style="display: none; max-width: 600px; margin: 0 auto; animation: fadeIn 0.4s ease-in-out;">
+        <h2 style="color: #e5b842; font-weight: 700; font-size: 24px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">Product Catalogue</h2>
+        
+        <!-- 📑 PDF Download Box -->
+        <div style="background: #161616; border: 1px dashed #e5b842; padding: 30px 20px; border-radius: 12px; margin-bottom: 40px;">
+            <span style="font-size: 45px; display: inline-block; margin-bottom: 10px;">📄</span>
+            <h3 style="margin: 0 0 10px 0; font-size: 18px; font-weight: 700;">Full Product Catalogue</h3>
+            <p style="color: #888; font-size: 14px; margin: 0 0 20px 0; font-weight: 300;">Access our complete commercial price list and specifications document.</p>
+            
+            <a href="catalogue.pdf" target="_blank" style="background-color: #2eb85c; color: white; text-decoration: none; padding: 12px 25px; font-weight: 700; font-size: 14px; border-radius: 6px; display: inline-block;">
+                📥 Download PDF
+            </a>
+        </div>
+    </div>
+
+    <!-- 💬 Floating WhatsApp Action Badge -->
+    <a href="https://wa.me" target="_blank" style="position: fixed; bottom: 25px; right: 25px; background-color: #25d366; color: white; text-decoration: none; padding: 12px 20px; border-radius: 30px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 15px rgba(37,211,102,0.3); display: flex; align-items: center; gap: 8px; z-index: 9999;">
+        WhatsApp Us
+    </a>
+
+    <!-- ⚙️ JavaScript Section Router Engine -->
+    <script>
+        function showSection(section) {
+            var home = document.getElementById("homeSection");
+            var products = document.getElementById("productsSection");
+            if (section === 'products') {
+                home.style.display = "none";
+                products.style.display = "block";
+            } else {
+                home.style.display = "block";
+                products.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
 
